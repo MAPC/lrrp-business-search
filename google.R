@@ -6,7 +6,7 @@ liby <- c("rstudioapi", "devtools", "googleway")
 lapply(liby, require, character.only = TRUE)
 
 
-api_key <- 'AIzaSyDnS0eLhEZm6jUMcVnFOoPwnC_Tn-4-ArU'
+api_key <- 'your-api-key-here' #google api key to be used
 
 #set the latitude, longitude, and town name of where you want to search
 lat <- 42.4084
