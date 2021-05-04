@@ -12,7 +12,7 @@ api_key <- 'your-api-key-here' #google api key to be used
 lat <- 42.4084
 long <- -71.0120
 loc <- c(lat,long)
-radius <- 7500 #radius in meteres
+radius <- 7500 #radius in meters
 town = 'Revere' 
 
 #loop to compile place search data
@@ -106,10 +106,9 @@ for (row in 1:nrow(places)) {
 }
 
 
-#delete first row and write to file
-compiled <- compiled[-1,]
+#write to file, eliminating the row names
 filename <- paste(town, '-google.csv', sep = '')
-write.csv(compiled, filename,row.names=FALSE)
+write.csv(compiled, filename, row.names=FALSE)
 
   
   
